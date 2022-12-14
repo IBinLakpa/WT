@@ -7,7 +7,7 @@ div{
     width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-	align-content: center;
+    align-content: center;
 }
 span{
     padding: 20px;

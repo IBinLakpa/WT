@@ -47,6 +47,7 @@ span.q{
 }
 button{
     border: none;
+    margin: 20px;
     font-weight: bold;
     font-style: bold;
     padding: 5%;

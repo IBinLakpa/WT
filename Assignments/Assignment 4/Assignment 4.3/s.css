@@ -10,26 +10,22 @@ header.topnav{
     margin-bottom: 1%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
-    top: 0;
     width: 100%;
     background-color: white;
 }
 header h1{
-    margin: 10px;
+    margin-right: 10px;
     float: left;
 }
 header.topnav li{
-    list-style-image: ;
-
     list-style: none;
     display: inline-block;
     margin: 10px;
-    padding: auto;
+    padding-top: 5%;
 }
 header button{
-    margin: 7px;
+    margin: 2%;
     display: inline-block;
     width: 140px;
     height: 50px;
@@ -50,7 +46,6 @@ div.b{
 }
 div.b div ul.ch{
     list-style-image: url("check.svg");
-    list-style-position: ;
     font-size: 2em;
 }
 img{

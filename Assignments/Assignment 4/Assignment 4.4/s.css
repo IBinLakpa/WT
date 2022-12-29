@@ -13,7 +13,7 @@ header.topnav{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    height: 100px;
+    height: 120px;
     top: 0;
     left: 0;
     width: 100%;
@@ -35,6 +35,7 @@ header.topnav li{
     list-style: none;
     display: inline-block;
     border-bottom: 2px solid white;
+    padding-bottom: 20px;
     margin: 50px;
 }
 header.topnav li:hover{
@@ -51,6 +52,14 @@ header.topnav li:hover{
     align-items: center;
 }
 input{
+    height: fit-content;
+    border: none;
+}
+input:active{
+    height: fit-content;
+    border: none;
+}
+input:hover{
     height: fit-content;
     border: none;
 }

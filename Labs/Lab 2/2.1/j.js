@@ -4,6 +4,7 @@ window.onload = function() {
     s_r = document.getElementById('s_right');
     d.addEventListener('mousedown',shift_divider,false);
     s_l.addEventListener('mouseup',move_left,false)
+    s_r.addEventListener('mouseup',move_right,false)
     //d.addEventListener('click',move_div,false);
 }
 function shift_divider(){
@@ -21,7 +22,15 @@ function move_left(){
     const d = document.getElementById('screen_divider');
     const s_l = document.getElementById('s_left');
     const s_r = document.getElementById('s_right');
-    d.style.left+="5%";
-    s_l.style.width-="5%";
-    s_r.style.width+="5%";
+    d.style.right+="50px";
+    s_l.style.width+="50px";
+    s_r.style.width-="50px";
+}
+function move_right(){
+    const d = document.getElementById('screen_divider');
+    const s_l = document.getElementById('s_left');
+    const s_r = document.getElementById('s_right');
+    d.style.left+="50px";
+    s_l.style.width-="50px";
+    s_r.style.width+="50px";
 }

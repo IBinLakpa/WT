@@ -3,7 +3,7 @@ body{
     font-family: verdana;
     color: white;
 }
-div.calculator{
+div{
     position: absolute;
     padding: 20px;
     top: 0;
@@ -16,26 +16,6 @@ div.calculator{
     padding: 10px;
     box-shadow: #374151;
 }
-table{
-    background-color: black;
-    border: 10px solid black;
-    border-radius: 20px;
-}
-td.display-screen{
-    border: 1px solid white;
-    border-radius: 20px;
-    height: 80px;
-    background-color: rgba(255, 255, 255, 0);
-}
-input{
-    background-color: rgba(0, 0, 0, 0);
-    height: 75px;
-    width: 190px;
-    border: none;
-    color: white;
-    font-size: 40px;
-}
-
 button{
     font-size: 30px;
     margin: 0px;
@@ -46,20 +26,6 @@ button{
     min-width: 50px;
     min-height: 50px;
     text-align: center;
-}
-button.btn-equal{
-    border-radius: 50px;
-    min-height: 100px;
-    background-color: rgb(151, 151, 151);
-}
-button.btn-operator{
-    background-color: rgba(255, 138, 158, 0.703);
-}
-button.btn-num{
-    background-color: rgba(133, 133, 255, 0.696);
-}
-button.btn-clear{
-    background-color: rgba(184, 48, 48, 0.718);
 }
 button:hover{
     color: rgba(255, 255, 255, 0.073);

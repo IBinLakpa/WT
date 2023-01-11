@@ -1,0 +1,27 @@
+/*
+The div1Handler, p1Handler, and button1Handler functions are defined in the JavaScript code. Each function simply logs a message to the console to indicate that it has been called. The button1Handler has an event.stopPropagation() call added, it will prevent the event to be propagated to the parent elements, so "p clicked" and "div clicked" will not be displayed.
+Also, the script added an event listener to the document object, which will capture any click events that occur on the page. The function will be called and "Click event captured!" will be printed to the console, before the event bubbling propagated to the element that was clicked.
+*/
+  // function to handle click events on the button element
+  function button1Handler(event) {
+    console.log("Button clicked!");
+    event.stopPropagation();  // prevent propagation of the event to parent elements
+  }
+
+  // function to handle click events on the p element
+  function p1Handler(event) {
+    console.log("p clicked!");
+  }
+
+  // function to handle click events on the div element
+  function div1Handler(event) {
+    console.log("div clicked!");
+  }
+  
+  // Add event listener on document that capture the event
+  document.addEventListener("click", function(event) {
+    console.log("Click event captured!");
+  }, true);
+/*
+when the button with the ID "button1" is clicked, the click event will be handled by the button1Handler function, then the click event will be propagated up to its parent element, the p element, which has its own onclick attribute that points to the p1Handler function. The p1Handler function will also be called, and the event will continue to propagate up to the parent element, the div element, which has an onclick attribute that points to the div1Handler function, so this function will also be called. So by propagating up the DOM tree through the parent elements, from the button to the div, the click event is said to be "bubbling" up the DOM.
+*/

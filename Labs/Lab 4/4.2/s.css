@@ -1,25 +1,19 @@
-body{
-    padding: 0;
-}
-div{
-    margin: auto;
+div {
+    padding: 8px;
+    top: 100px;
     position: absolute;
-    height: 200px;
-    width: 200px;
-    bottom: 0;
-    right: 0;
-    top: 0;
+    height: 100px;
+    width: 100px;
 }
-div.r{
+.r{
     background-color: red;
-    left:0px;
-    
+    left: 100px
 }
-div.g{
-    background-color: green;
-    
-}
-div.b{
+.b{
     background-color: blue;
-    left: 400px;
+    left: 400px
+}
+.g{
+    background-color: green;
+    left: 800px
 }

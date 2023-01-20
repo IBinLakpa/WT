@@ -9,14 +9,8 @@
         <script src="j.js"></script>
     </head>
     <body>
-        <div class="r" onclick="grab(this)">
-            
-        </div>
-        <div class="b" onclick="grab(this)">
-            
-        </div>
-        <div class="g" onclick="grab(this)">
-            
-        </div>
+        <div class="r" onclick="stacking('r', 'b', 'g', 'click')"></div>
+	    <div class="b" onclick="stacking('b', 'r', 'g', 'click')"></div>
+    	<div class="g" onclick="stacking('g', 'r', 'b', 'click')"></div>
     </body>
 </html>
